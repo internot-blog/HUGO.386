@@ -41,3 +41,20 @@
     margin: 0 auto;
     display: block;
 }
+
+/* Bottom Ad Styling */
+.bottom-ad-banner {
+    width: 100%; /* Full-width banner */
+    padding-top: 20px; /* Add some padding at the top to separate from content */
+    padding-bottom: 20px; /* Add padding at the bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-ad-banner img {
+    width: 100%;
+    max-width: 1200px; /* Limit the width on larger screens */
+    height: auto;
+    object-fit: contain; /* Keep the image proportionally scaled */
+}
