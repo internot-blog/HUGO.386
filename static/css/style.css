@@ -11,12 +11,23 @@
     margin-top: 30px;
 }
 
+.ad-banner-bottom {
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+}
+
 .ad-header {
 	display: flex;
 	justify-content: space-between;
 	padding-left: 10px;
 	background-color: #bbb;
 	color: black;
+}
+
+.vertical-ad-banner .ad-header {
+	max-width: calc(50% - 10px);
+	margin: 0 auto;
 }
 
 .ad-dismiss {
