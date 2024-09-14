@@ -36,16 +36,16 @@
             </div>
         </div>
     </div>
-</div>
-
-<!-- Bottom Full-Width Ad Section -->
-<div class="bottom-ad-banner">
-    {{ $bottomImages := readDir "static/img/horizontal" }}
-    {{ $shuffledBottom := shuffle $bottomImages }}
-    {{ $selectedBottomImage := index $shuffledBottom 0 }}
-    <div class="ad-banner-bottom">
-        <img src="/img/horizontal/{{ $selectedBottomImage.Name }}" alt="Bottom Advertisement" class="img-fluid" style="filter: none;">
+    <!-- Bottom Full-Width Ad Section -->
+    <div class="bottom-ad-banner">
+        {{ $bottomImages := readDir "static/img/horizontal" }}
+        {{ $shuffledBottom := shuffle $bottomImages }}
+        {{ $selectedBottomImage := index $shuffledBottom 0 }}
+        <div class="ad-banner-bottom">
+            <img src="/img/horizontal/{{ $selectedBottomImage.Name }}" alt="Bottom Advertisement" class="img-fluid" style="filter: none;">
+        </div>
     </div>
 </div>
+
 
 {{ end }}
