@@ -1,20 +1,41 @@
 {{ define "main" }}
 
-<div class="row-fluid navmargin">
-    <!-- Advertisement Banner -->
-    {{ $images := readDir "static/img" }}
-    {{ $shuffled := shuffle $images }}
-    {{ $selectedImage := index $shuffled 0 }}
-    <div class="ad-banner">
-        <img src="/img/{{ $selectedImage.Name }}" alt="Advertisement" class="img-fluid" style="filter: none;">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Main Content -->
+        <div class="col-md-9">
+            <div class="row-fluid navmargin">
+                <!-- Advertisement Banner -->
+                {{ $images := readDir "static/img" }}
+                {{ $shuffled := shuffle $images }}
+                {{ $selectedImage := index $shuffled 0 }}
+                <div class="ad-banner">
+                    <img src="/img/{{ $selectedImage.Name }}" alt="Advertisement" class="img-fluid" style="filter: none;">
+                </div>
+                
+                <div class="page-header">
+                    <h1>{{ .Title }} - {{ .Date.Format "Mon, Jan 2, 2006" }}</h1>
+                </div>
+                <p class="lead">{{ .Params.description }}</p>
+                {{ .Content }}
+                <h4><a href="{{ .Site.BaseURL }}">{{ i18n "backtohome" }}</a></h4>
+            </div>
+        </div>
+        
+        <!-- Sidebar with Vertical Ad Banner -->
+        <div class="col-md-3">
+            {{ $verticalImages := readDir "static/img/vertical" }}
+            {{ $shuffledVertical := shuffle $verticalImages }}
+            {{ $selectedVerticalImage := index $shuffledVertical 0 }}
+            <div class="vertical-ad-banner">
+                <img src="/img/vertical/{{ $selectedVerticalImage.Name }}" alt="Vertical Advertisement" class="img-fluid" style="filter: none;">
+            </div>
+        </div>
     </div>
-    
-    <div class="page-header">
-        <h1>{{ .Title }} - {{ .Date.Format "Mon, Jan 2, 2006" }}</h1>
-    </div>
-    <p class="lead">{{ .Params.description }}</p>
-    {{ .Content }}
-    <h4><a href="{{ .Site.BaseURL }}">{{ i18n "backtohome" }}</a></h4>
 </div>
 
 {{ end }}
