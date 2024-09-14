@@ -14,6 +14,10 @@
                 {{ $shuffled := shuffle $images }}
                 {{ $selectedImage := index $shuffled 0 }}
                 <div class="ad-banner">
+                    <div class="ad-header">
+                        <span>ADVERTISEMENT</span>
+                        <a class="ad-dismiss" href="#">X</a>
+                    </div>
                     <img src="/img/horizontal/{{ $selectedImage.Name }}" alt="Advertisement" class="img-fluid" style="filter: none;">
                 </div>
                 
@@ -31,7 +35,11 @@
             {{ $verticalImages := readDir "static/img/vertical" }}
             {{ $shuffledVertical := shuffle $verticalImages }}
             {{ $selectedVerticalImage := index $shuffledVertical 0 }}
-            <div class="vertical-ad-banner">
+            <div class="vertical-ad-banner">            
+                <div class="ad-header">
+                    <span>AD</span>
+                    <a class="ad-dismiss" href="#">X</a>
+                </div>
                 <img src="/img/vertical/{{ $selectedVerticalImage.Name }}" alt="Vertical Advertisement" class="img-fluid" style="filter: none;">
             </div>
         </div>
@@ -42,6 +50,10 @@
         {{ $shuffledBottom := shuffle $bottomImages }}
         {{ $selectedBottomImage := index $shuffledBottom 0 }}
         <div class="ad-banner-bottom">
+            <div class="ad-header">
+                <span>ADVERTISEMENT</span>
+                <a class="ad-dismiss" href="#">X</a>
+            </div>
             <img src="/img/horizontal/{{ $selectedBottomImage.Name }}" alt="Bottom Advertisement" class="img-fluid" style="filter: none;">
         </div>
     </div>
