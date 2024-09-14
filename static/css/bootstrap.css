@@ -12,10 +12,6 @@
   *zoom: 1;
 }
 
-h2 {
-  text-wrap: wrap;
-}
-
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -811,7 +807,6 @@ h1 {
 h2 {
   font-size: 18px;
   text-align: center;
-  white-space: nowrap;
 }
 
 h3 {
