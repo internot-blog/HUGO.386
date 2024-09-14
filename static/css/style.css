@@ -29,13 +29,15 @@
 .vertical-ad-banner {
     margin-top: 20px;
     width: 100%; /* Ensure the ad takes full width of the sidebar */
-    height: auto; /* The height will be dynamically adjusted by JS */
-    overflow: hidden; /* Ensure no overflow issues */
+    height: auto;
+    overflow: hidden;
 }
 
 .vertical-ad-banner img {
-    width: 100%; /* Ensure the ad banner takes full width */
+    width: 100%; /* Ensure it fits the sidebar width */
+    max-width: 50%; /* Scale down to about half of its original size */
     height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Prevent image distortion */
+    object-fit: contain; /* Prevent distortion */
     margin: 0 auto;
+    display: block;
 }
