@@ -1,6 +1,6 @@
 .container-fluid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Ensure the content and sidebar are on the same line */
 }
 
 .row {
