@@ -27,7 +27,7 @@
 }
 
 .vertical-ad-banner {
-    margin-top: 20px;
+    margin-top: 100%;
     width: 100%; /* Ensure the ad takes full width of the sidebar */
     height: auto;
     overflow: hidden;
