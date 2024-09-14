@@ -6,41 +6,38 @@
 .row {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start; /* Ensure alignment starts at the top */
     width: 100%;
 }
 
 .col-md-9.main-content {
     flex: 0 0 75%;
     max-width: 75%;
-    padding-left: 15px; /* Adding padding to ensure content doesn't touch the left edge */
-    padding-right: 15px; /* Ensure there's space between the main content and the sidebar */
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .col-md-3.sidebar {
     flex: 0 0 25%;
     max-width: 25%;
     padding-left: 15px;
+    display: flex;
+    justify-content: center; /* Center the ad banner horizontally */
+    align-items: flex-start; /* Align the ad banner with the start of the content */
 }
 
 .vertical-ad-banner {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-height: 100%; /* Ensure it doesn't exceed the height of the content */
 }
 
-.ad-banner img, .vertical-ad-banner img {
-    width: 100%;
-    height: auto;
-}
-
-.navmargin {
-    margin-top: 20px;
-}
-
-.page-header {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-p.lead, .page-header h1 {
-    margin-left: 15px; /* Ensures the text has padding from the left to prevent cutting off */
-    margin-right: 15px; /* Same padding for the right side */
+.vertical-ad-banner img {
+    width: 100%; /* Adjust width to fit container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Scale dynamically to fit within the height of the content */
+    object-fit: cover; /* Prevent distortion */
+    margin: 0 auto; /* Center the image */
 }
