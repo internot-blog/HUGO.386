@@ -6,7 +6,7 @@
 .row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Ensure alignment starts at the top */
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -22,22 +22,20 @@
     max-width: 25%;
     padding-left: 15px;
     display: flex;
-    justify-content: center; /* Center the ad banner horizontally */
-    align-items: flex-start; /* Align the ad banner with the start of the content */
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .vertical-ad-banner {
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    max-height: 100%; /* Ensure it doesn't exceed the height of the content */
+    width: 100%; /* Ensure the ad takes full width of the sidebar */
+    height: auto; /* The height will be dynamically adjusted by JS */
+    overflow: hidden; /* Ensure no overflow issues */
 }
 
 .vertical-ad-banner img {
-    width: 100%; /* Adjust width to fit container */
+    width: 100%; /* Ensure the ad banner takes full width */
     height: auto; /* Maintain aspect ratio */
-    max-height: 100%; /* Scale dynamically to fit within the height of the content */
-    object-fit: cover; /* Prevent distortion */
-    margin: 0 auto; /* Center the image */
+    object-fit: cover; /* Prevent image distortion */
+    margin: 0 auto;
 }
