@@ -1,6 +1,5 @@
 .container-fluid {
-    display: flex;
-    flex-wrap: nowrap; /* Ensure the content and sidebar are on the same line */
+    width: 100%;
 }
 
 .row {
@@ -25,4 +24,8 @@
 .ad-banner img, .vertical-ad-banner img {
     width: 100%;
     height: auto;
+}
+
+.navmargin {
+    margin-top: 20px;
 }
