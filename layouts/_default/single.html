@@ -7,8 +7,8 @@
 <div class="container-fluid">
     <div class="row">
         <!-- Main Content -->
-        <div class="col-md-9">
-            <div class="row navmargin">
+        <div class="col-md-9 main-content">
+            <div class="navmargin">
                 <!-- Advertisement Banner -->
                 {{ $images := readDir "static/img/horizontal" }}
                 {{ $shuffled := shuffle $images }}
@@ -27,7 +27,7 @@
         </div>
         
         <!-- Sidebar with Vertical Ad Banner -->
-        <div class="col-md-3">
+        <div class="col-md-3 sidebar">
             {{ $verticalImages := readDir "static/img/vertical" }}
             {{ $shuffledVertical := shuffle $verticalImages }}
             {{ $selectedVerticalImage := index $shuffledVertical 0 }}

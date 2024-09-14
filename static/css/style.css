@@ -1,20 +1,24 @@
 .container-fluid {
-    width: 100%;
+    padding-right: 0; /* Ensure no right padding so that content fills the entire space */
+    padding-left: 0; /* Same for the left side */
 }
 
 .row {
     display: flex;
+    justify-content: space-between; /* Space out the columns to ensure sidebar is on the right */
     width: 100%;
 }
 
-.col-md-9 {
+.col-md-9.main-content {
     flex: 0 0 75%;
     max-width: 75%;
+    padding-right: 15px; /* Add a bit of padding on the right to avoid text sticking to the sidebar */
 }
 
-.col-md-3 {
+.col-md-3.sidebar {
     flex: 0 0 25%;
     max-width: 25%;
+    padding-left: 15px; /* Add some padding between the content and the sidebar */
 }
 
 .vertical-ad-banner {
@@ -28,4 +32,9 @@
 
 .navmargin {
     margin-top: 20px;
+}
+
+.page-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
