@@ -21,3 +21,8 @@
 .vertical-ad-banner {
     margin-top: 20px;
 }
+
+.ad-banner img, .vertical-ad-banner img {
+    width: 100%;
+    height: auto;
+}
