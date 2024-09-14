@@ -12,6 +12,10 @@
   *zoom: 1;
 }
 
+h2 {
+  text-wrap: wrap;
+}
+
 .clearfix:before,
 .clearfix:after {
   display: table;
