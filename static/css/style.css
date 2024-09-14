@@ -7,6 +7,10 @@
     text-wrap: wrap;
 }
 
+.add-banner {
+    margin-top: 30px;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
