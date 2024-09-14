@@ -3,6 +3,10 @@
     padding-left: 0;
 }
 
+.h2 {
+    text-wrap: wrap;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -26,15 +30,6 @@
     align-items: flex-start;
 }
 
-.ad-banner {
-    margin-top: 30px; /* Adjust this value to increase the space above the horizontal ad */
-}
-
-.ad-banner img {
-    width: 100%;
-    height: auto;
-}
-
 .vertical-ad-banner {
     margin-top: 100%;
     width: 100%; /* Ensure the ad takes full width of the sidebar */
@@ -49,21 +44,4 @@
     object-fit: contain; /* Prevent distortion */
     margin: 0 auto;
     display: block;
-}
-
-/* Bottom Ad Styling */
-.bottom-ad-banner {
-    width: 100%; /* Full-width banner */
-    padding-top: 20px; /* Add some padding at the top to separate from content */
-    padding-bottom: 20px; /* Add padding at the bottom */
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.bottom-ad-banner img {
-    width: 100%;
-    max-width: 1200px; /* Limit the width on larger screens */
-    height: auto;
-    object-fit: contain; /* Keep the image proportionally scaled */
 }
