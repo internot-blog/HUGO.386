@@ -26,6 +26,15 @@
     align-items: flex-start;
 }
 
+.ad-banner {
+    margin-top: 30px; /* Adjust this value to increase the space above the horizontal ad */
+}
+
+.ad-banner img {
+    width: 100%;
+    height: auto;
+}
+
 .vertical-ad-banner {
     margin-top: 100%;
     width: 100%; /* Ensure the ad takes full width of the sidebar */
