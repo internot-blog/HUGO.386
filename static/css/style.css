@@ -4,7 +4,7 @@
 }
 
 .h2 {
-    text-wrap: wrap;
+    text-wrap: wrap !important;
 }
 
 .ad-banner {
